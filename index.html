@@ -7,31 +7,32 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">Becoming</div>
-            <div class="nav-links">
-                <a href="#review" class="nav-link">2025 Review</a>
-                <a href="plan.html" class="nav-link">2026 Plan</a>
-            </div>
-        </div>
-    </nav>
-
     <header class="hero">
         <div class="container">
             <h1 class="hero-title">My Technical Journey</h1>
-            <p class="hero-subtitle">Reflecting on 2025 & Planning for 2026</p>
+            <p class="hero-subtitle">Tracking Progress & Planning Ahead</p>
         </div>
     </header>
 
+    <nav class="year-nav">
+        <div class="container">
+            <button class="year-button active" data-year="2025">2025</button>
+            <button class="year-button" data-year="2026">2026</button>
+        </div>
+    </nav>
+
     <main class="container">
-        <section id="review" class="section">
-            <h2 class="section-title">Technical Review of 2025</h2>
+        <section id="year-2025" class="year-content active">
+            <div class="year-header">
+                <h2 class="section-title">2025 - Year in Review</h2>
+                <div class="completion-badge">All Goals Achieved ✓</div>
+            </div>
             
             <div class="card-grid">
-                <div class="card">
+                <div class="card completed-card">
                     <div class="card-header">
                         <h3>Coursera Courses</h3>
+                        <span class="status-badge completed">Completed</span>
                     </div>
                     <div class="card-content">
                         <h4>Machine Learning Specialization</h4>
@@ -54,9 +55,10 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card completed-card">
                     <div class="card-header">
                         <h3>Deep Learning AI Courses</h3>
+                        <span class="status-badge completed">Completed</span>
                     </div>
                     <div class="card-content">
                         <ul>
@@ -69,48 +71,49 @@
                 </div>
             </div>
 
-            <div class="card featured-card">
+            <div class="card featured-card completed-card">
                 <div class="card-header">
                     <h3>Projects Completed on GitHub</h3>
+                    <span class="status-badge completed">Completed</span>
                 </div>
                 <div class="card-content">
                     <div class="projects-grid">
                         <div class="project-category">
                             <h4>System Programming</h4>
                             <ul>
-                                <li><strong>tls-rs</strong> - TLS client and server implementation in Rust</li>
-                                <li><strong>tcp-rust</strong> - TCP stack implemented in Rust</li>
-                                <li><strong>ssh-rs</strong> - Basic SSH client in Rust</li>
-                                <li><strong>websocket-rs</strong> - WebSocket client and server</li>
-                                <li><strong>dns-resolver</strong> - DNS resolver website and backend</li>
-                                <li><strong>alpha-os</strong> - Writing an OS in Rust</li>
+                                <li><strong><a href="https://github.com/gausk/tls-rs" target="_blank">tls-rs</a></strong> - TLS client and server implementation in Rust</li>
+                                <li><strong><a href="https://github.com/gausk/tcp-rust" target="_blank">tcp-rust</a></strong> - TCP stack implemented in Rust</li>
+                                <li><strong><a href="https://github.com/gausk/ssh-rs" target="_blank">ssh-rs</a></strong> - Basic SSH client in Rust</li>
+                                <li><strong><a href="https://github.com/gausk/websocket-rs" target="_blank">websocket-rs</a></strong> - WebSocket client and server</li>
+                                <li><strong><a href="https://github.com/gausk/dns-resolver" target="_blank">dns-resolver</a></strong> - DNS resolver website and backend</li>
+                                <li><strong><a href="https://github.com/gausk/alpha-os" target="_blank">alpha-os</a></strong> - Writing an OS in Rust</li>
                             </ul>
                         </div>
 
                         <div class="project-category">
                             <h4>Developer Tools</h4>
                             <ul>
-                                <li><strong>git-rs</strong> - Basic Git implementation from scratch</li>
-                                <li><strong>gdb-basic</strong> - GDB basics exploration</li>
-                                <li><strong>rivet</strong> - Basic shell built in Rust</li>
-                                <li><strong>pdf-rs</strong> - Basic PDF creator</li>
+                                <li><strong><a href="https://github.com/gausk/git-rs" target="_blank">git-rs</a></strong> - Basic Git implementation from scratch</li>
+                                <li><strong><a href="https://github.com/gausk/gdb-basic" target="_blank">gdb-basic</a></strong> - GDB basics exploration</li>
+                                <li><strong><a href="https://github.com/gausk/rivet" target="_blank">rivet</a></strong> - Basic shell built in Rust</li>
+                                <li><strong><a href="https://github.com/gausk/pdf-rs" target="_blank">pdf-rs</a></strong> - Basic PDF creator</li>
                             </ul>
                         </div>
 
                         <div class="project-category">
                             <h4>Security & Applications</h4>
                             <ul>
-                                <li><strong>lock-smith-rs</strong> - CLI based password manager</li>
-                                <li><strong>gk-authenticator-rs</strong> - CLI based authenticator</li>
-                                <li><strong>landlock</strong> - Linux landlock API usage</li>
+                                <li><strong><a href="https://github.com/gausk/lock-smith-rs" target="_blank">lock-smith-rs</a></strong> - CLI based password manager</li>
+                                <li><strong><a href="https://github.com/gausk/gk-authenticator-rs" target="_blank">gk-authenticator-rs</a></strong> - CLI based authenticator</li>
+                                <li><strong><a href="https://github.com/gausk/landlock" target="_blank">landlock</a></strong> - Linux landlock API usage</li>
                             </ul>
                         </div>
 
                         <div class="project-category">
                             <h4>Rust Deep Dives</h4>
                             <ul>
-                                <li><strong>falgu-rs</strong> - Channel implementation in Rust</li>
-                                <li><strong>splitter</strong> - Lifetime exploration in Rust</li>
+                                <li><strong><a href="https://github.com/gausk/falgu-rs" target="_blank">falgu-rs</a></strong> - Channel implementation in Rust</li>
+                                <li><strong><a href="https://github.com/gausk/splitter" target="_blank">splitter</a></strong> - Lifetime exploration in Rust</li>
                                 <li>Advanced concepts: Drop check, Subtyping & variance, Atomics, Send-sync, Pointers, Iterators, Async, Macros</li>
                             </ul>
                         </div>
@@ -118,9 +121,9 @@
                         <div class="project-category">
                             <h4>AI & Web</h4>
                             <ul>
-                                <li><strong>machine-learning</strong> - Course lab implementations</li>
-                                <li><strong>rust-mcp</strong> - MCP in Rust examples</li>
-                                <li><strong>train-rs</strong> - Train status website</li>
+                                <li><strong><a href="https://github.com/gausk/machine-learning" target="_blank">machine-learning</a></strong> - Course lab implementations</li>
+                                <li><strong><a href="https://github.com/gausk/rust-mcp" target="_blank">rust-mcp</a></strong> - MCP in Rust examples</li>
+                                <li><strong><a href="https://github.com/gausk/train-rs" target="_blank">train-rs</a></strong> - Train status website</li>
                             </ul>
                         </div>
                     </div>
@@ -128,9 +131,10 @@
             </div>
 
             <div class="card-grid">
-                <div class="card">
+                <div class="card completed-card">
                     <div class="card-header">
                         <h3>Other Technologies</h3>
+                        <span class="status-badge completed">Completed</span>
                     </div>
                     <div class="card-content">
                         <ul>
@@ -141,9 +145,10 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card completed-card">
                     <div class="card-header">
                         <h3>Books Read</h3>
+                        <span class="status-badge completed">Completed</span>
                     </div>
                     <div class="card-content">
                         <ul>
@@ -155,26 +160,172 @@
                 </div>
             </div>
 
-            <div class="stats-section">
-                <div class="stat-card">
-                    <div class="stat-number">20+</div>
-                    <div class="stat-label">Projects Completed</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">12+</div>
-                    <div class="stat-label">Courses Finished</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">∞</div>
-                    <div class="stat-label">Lines of Rust Code</div>
-                </div>
-            </div>
         </section>
 
-        <section class="cta-section">
-            <h2>Ready for 2026?</h2>
-            <p>Check out my plans for the upcoming year</p>
-            <a href="plan.html" class="cta-button">View 2026 Plan →</a>
+        <section id="year-2026" class="year-content">
+            <div class="year-header">
+                <h2 class="section-title">2026 - Goals & Plans</h2>
+                <div class="completion-badge planning">Planning Phase</div>
+            </div>
+
+            <div class="card-grid">
+                <div class="card planned-card">
+                    <div class="card-header">
+                        <h3>Technical Skills</h3>
+                        <span class="status-badge planned">Planned</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="goal-item">
+                            <strong>Deep Dive into Kernel Development</strong>
+                            <p>Advanced OS concepts and kernel-level programming</p>
+                        </div>
+                        <div class="goal-item">
+                            <strong>Rust Async Programming Expertise</strong>
+                            <p>Master async patterns and runtime implementations</p>
+                        </div>
+                        <div class="goal-item">
+                            <strong>Implement Raft Consensus Algorithm</strong>
+                            <p>Build distributed consensus from scratch</p>
+                        </div>
+                        <div class="goal-item">
+                            <strong>Build Container Orchestrator</strong>
+                            <p>Create a basic container orchestrator from scratch</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card planned-card">
+                    <div class="card-header">
+                        <h3>AI & Machine Learning</h3>
+                        <span class="status-badge planned">Planned</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="goal-item">
+                            <strong>Explore AI Product Development</strong>
+                            <p>Build and launch AI-powered products</p>
+                        </div>
+                        <div class="goal-item">
+                            <strong>Production-Ready AI Applications</strong>
+                            <p>Create scalable, production-grade AI applications</p>
+                        </div>
+                        <div class="goal-item">
+                            <strong>Build Autonomous AI Agent Systems</strong>
+                            <p>Develop intelligent, self-operating AI agents</p>
+                        </div>
+                        <div class="goal-item">
+                            <strong>Write Technical Blog</strong>
+                            <p>Share learnings through one comprehensive technical article</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card featured-card planned-card">
+                <div class="card-header">
+                    <h3>Quarterly Roadmap</h3>
+                    <span class="status-badge planned">Planned</span>
+                </div>
+                <div class="card-content">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h4>Q1 2026 (Jan - Mar)</h4>
+                                <ul>
+                                    <li>Master Rust async programming patterns</li>
+                                    <li>Begin kernel development deep dive</li>
+                                    <li>Read Crime and Punishment + 2 technical books</li>
+                                    <li>Start exploring AI product ideas</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h4>Q2 2026 (Apr - Jun)</h4>
+                                <ul>
+                                    <li>Implement Raft consensus algorithm</li>
+                                    <li>Build basic container orchestrator from scratch</li>
+                                    <li>Start building production-ready AI application</li>
+                                    <li>Read 3+ books</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h4>Q3 2026 (Jul - Sep)</h4>
+                                <ul>
+                                    <li>Build autonomous AI agent system</li>
+                                    <li>Write comprehensive technical blog post</li>
+                                    <li>Continue kernel development projects</li>
+                                    <li>Read 3+ books</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h4>Q4 2026 (Oct - Dec)</h4>
+                                <ul>
+                                    <li>Launch AI product</li>
+                                    <li>Complete advanced OS development milestones</li>
+                                    <li>Read 4+ books (total 12+ for the year)</li>
+                                    <li>Prepare 2026 year-end review</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-grid">
+                <div class="card planned-card">
+                    <div class="card-header">
+                        <h3>Learning Resources</h3>
+                        <span class="status-badge planned">Planned</span>
+                    </div>
+                    <div class="card-content">
+                        <h4>Books to Read (12+ target)</h4>
+                        <ul>
+                            <li><strong>Crime and Punishment</strong> - Fyodor Dostoevsky</li>
+                            <li>Designing Data-Intensive Applications</li>
+                            <li>Database Internals</li>
+                            <li>The Pragmatic Programmer</li>
+                            <li>Site Reliability Engineering</li>
+                            <li>Programming Rust (2nd Edition)</li>
+                            <li>Operating Systems: Three Easy Pieces</li>
+                            <li>And 5+ more technical and literary books</li>
+                        </ul>
+                        <h4>Key Learning Areas</h4>
+                        <ul>
+                            <li>Rust async programming and runtimes</li>
+                            <li>Kernel development and OS internals</li>
+                            <li>Distributed systems and consensus</li>
+                            <li>AI/ML product development</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card planned-card">
+                    <div class="card-header">
+                        <h3>Project Ideas</h3>
+                        <span class="status-badge planned">Planned</span>
+                    </div>
+                    <div class="card-content">
+                        <h4>Major Projects</h4>
+                        <ul>
+                            <li>Raft consensus algorithm implementation</li>
+                            <li>Basic container orchestrator from scratch</li>
+                            <li>Production-ready AI application</li>
+                            <li>Autonomous AI agent system</li>
+                            <li>Kernel module or OS development project</li>
+                            <li>AI product (concept to launch)</li>
+                        </ul>
+                        <h4>Content Creation</h4>
+                        <ul>
+                            <li>Write one comprehensive technical blog post</li>
+                            <li>Document learning journey and insights</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -183,5 +334,22 @@
             <p>© 2025 - Journey of Becoming | <a href="https://github.com/gausk" target="_blank">GitHub</a></p>
         </div>
     </footer>
+
+    <script>
+        const yearButtons = document.querySelectorAll('.year-button');
+        const yearContents = document.querySelectorAll('.year-content');
+
+        yearButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const year = button.dataset.year;
+                
+                yearButtons.forEach(btn => btn.classList.remove('active'));
+                yearContents.forEach(content => content.classList.remove('active'));
+                
+                button.classList.add('active');
+                document.getElementById(`year-${year}`).classList.add('active');
+            });
+        });
+    </script>
 </body>
 </html>

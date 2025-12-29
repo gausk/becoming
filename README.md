@@ -1,6 +1,6 @@
 # Becoming - My Technical Journey
 
-A beautiful static website showcasing my 2025 technical review and 2026 goals.
+A static website showcasing my 2025 technical review and 2026 goals.
 
 ## Live Website
 

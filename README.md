@@ -1,6 +1,6 @@
-# Becoming - My Technical Journey
+# Becoming of GKS
 
-A static website showcasing my 2025 technical review and 2026 goals.
+A website showcasing my 2025 technical review and 2026 goals.
 
 ## Live Website
 
@@ -11,4 +11,5 @@ Also accessible at: [https://gausk.github.io/becoming](https://gausk.github.io/b
 ## Contents
 
 - **2025 Review** - Comprehensive review of courses, projects, and learnings from 2025
+
 - **2026 Plan** - Goals, roadmap, and plans for the upcoming year
